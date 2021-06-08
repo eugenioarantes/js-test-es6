@@ -1,0 +1,23 @@
+{
+  "name": "sd-0x-block8-project-js-unit-tests",
+  "version": "1.0.0",
+  "description": "Project for block 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "javascript",
+    "tests",
+    "assert",
+    "jest"
+  ],
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "jest": "^24.9.0",
+    "acorn": ">=5.7.4",
+    "minimist": ">=1.2.2"
+  }
+}
