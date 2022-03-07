@@ -61,8 +61,6 @@ const createMenu = (menuList) => {
     },
     pay: () => {
       let result =0;
-      console.log("respostaaa: "+ typeof(menu.consumption));
-
       menu.consumption.forEach((item) => {
         if (menu.fetchMenu.food[item]) {
           result += menu.fetchMenu.food[item];
@@ -72,16 +70,6 @@ const createMenu = (menuList) => {
       });
       return result + (result * 0.10);
     }
-
-
-    // menu.consumption.forEach((item) => {
-    //   if (menu.fetchMenu.food[item]) {
-    //     totalPrice += menu.fetchMenu.food[item];
-    //   } else if (menu.fetchMenu.drink[item]) {
-    //     totalPrice += menu.fetchMenu.drink[item];
-    //   }
-    // });
-
   };
 };
 
