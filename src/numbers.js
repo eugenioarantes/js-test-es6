@@ -9,6 +9,17 @@
     - numbers([2, 'errado', 5]); // Retorna: false
 */
 
-const numbers = () => {};
+const numbers = (numbers) => {
+  let countNumbers =0;
+  for (let n = 0; n < numbers.length; n++) {
+    if (typeof(numbers[n]) === "number") {
+      countNumbers++;
+    }
+  }
+  if (countNumbers === numbers.length) {
+    return true;
+  }
+  return false;
+};
 
 module.exports = numbers;

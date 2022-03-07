@@ -24,6 +24,21 @@
   ]
 */
 
-const productDetails = () => {};
+const productDetails = (product1, product2) => {
+  return [
+    {
+      name: product1,
+      details: {
+        productId: `${product1}123`
+      }
+    },
+    {
+      name: product2,
+      details: {
+        productId: `${product2}123`
+      }
+    }
+  ]
+};
 
 module.exports = productDetails;
