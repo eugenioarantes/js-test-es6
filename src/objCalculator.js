@@ -20,17 +20,17 @@
 */
 
 const calculator = {
-  add: (int1, int2) => (
-     int1 + int2
+  add: (firstNumber, secondNumber) => (
+     firstNumber + secondNumber
   ),
-  mult: (int1, int2) => (
-    int1 * int2
+  mult: (firstNumber, secondNumber) => (
+    firstNumber * secondNumber
   ),
-  div: (int1, int2) => (
-    parseInt(int1 / int2)
+  div: (firstNumber, secondNumber) => (
+    parseInt(firstNumber / secondNumber)
   ),
-  sub: (int1, int2) => (
-    int1 - int2
+  sub: (firstNumber, secondNumber) => (
+    firstNumber - secondNumber
  )
 };
 

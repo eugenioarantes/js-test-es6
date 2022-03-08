@@ -24,18 +24,18 @@
   ]
 */
 
-const productDetails = (product1, product2) => {
+const productDetails = (firstProduct, secondProduct) => {
   return [
     {
-      name: product1,
+      name: firstProduct,
       details: {
-        productId: `${product1}123`
+        productId: `${firstProduct}123`
       }
     },
     {
-      name: product2,
+      name: secondProduct,
       details: {
-        productId: `${product2}123`
+        productId: `${secondProduct}123`
       }
     }
   ]

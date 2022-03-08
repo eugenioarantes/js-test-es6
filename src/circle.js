@@ -19,16 +19,17 @@
 */
 
 const circle = (radius) => {
-  if (radius) {
-    const area = Math.PI * Math.pow(radius, 2);
-    const circumference = 2 * Math.PI * radius;
-    return {
-      radius: radius,
-      area: area,
-      circumference: circumference
-    }
+  if (!radius)
+    return undefined;
+
+  const area = Math.PI * Math.pow(radius, 2);
+  const circumference = 2 * Math.PI * radius;
+  return {
+    radius: radius,
+    area: area,
+    circumference: circumference
   }
-  return undefined;
+
 };
 
 module.exports = circle;

@@ -10,16 +10,15 @@
 */
 
 const numbers = (numbers) => {
-  let countNumbers =0;
-  for (let n = 0; n < numbers.length; n++) {
-    if (typeof(numbers[n]) === "number") {
-      countNumbers++;
-    }
+  let countNumbers = 0;
+
+  for (let numberIndex = 0; numberIndex < numbers.length; numberIndex++) {
+    if (typeof(numbers[numberIndex]) === "number")
+      countNumbers += 1;
+    else return false;
   }
-  if (countNumbers === numbers.length) {
-    return true;
-  }
-  return false;
+
+  if (countNumbers === numbers.length) return true;
 };
 
 module.exports = numbers;
